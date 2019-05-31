@@ -70,9 +70,9 @@ MNFCService.getInstance().startSilentCertification(this, REQUEST_CODE);
 MNFCService.getInstance().startInteractiveCertification(this, REQUEST_CODE);
 ```
 
-具体使用细节，参考[接口文档](/kai-fa-zhi-nan/zhen-ren-ren-zheng/android-sdkjie-ru-zhi-nan/jie-kou-wen-dang.md)
+具体使用细节，参考[接口文档](https://cosmos.wemomo.com/cv/wiki/kai-fa-zhi-nan/zhen-ren-ren-zheng/android-sdkjie-ru-zhi-nan.html)
 
 ## 人脸比对及人脸搜索功能
 
-参考[接口文档](/kai-fa-zhi-nan/zhen-ren-ren-zheng/android-sdkjie-ru-zhi-nan/jie-kou-wen-dang.md)
+参考[接口文档](https://cosmos.wemomo.com/cv/wiki/kai-fa-zhi-nan/zhen-ren-ren-zheng/android-sdkjie-ru-zhi-nan.html)
 
