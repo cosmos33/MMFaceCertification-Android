@@ -66,10 +66,10 @@ public class MainActivity extends AppCompatActivity {
 
     public void matchTest(View view) {
         //replace your image file path here
-        MNFCService.getInstance().comparePersonWithImg(new File("/sdcard/xxx.jpg"), "5618",
+        MNFCService.getInstance().comparePersonWithImg(new File("/sdcard/me.jpg"), "1327731",
                 new OnCompareResultCallback() {
                     @Override
-                    public void onResult(CompareResult result) {
+                    public void onSuccess(CompareResult result) {
                         Log.d(TAG, "onResult:  code: " + result.resultCode
                                 + "\npersonId" + result.personId
                                 + "\nscore:" + result.score);
@@ -87,7 +87,7 @@ public class MainActivity extends AppCompatActivity {
         MNFCService.getInstance().comparePersonWithUrl("https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1559312662571&di=b633e2aee7989fc607791af5fcc204c6&imgtype=0&src=http%3A%2F%2Fb-ssl.duitang.com%2Fuploads%2Fitem%2F201503%2F22%2F20150322094814_UEmhZ.jpeg",
                 "5618", new OnCompareResultCallback() {
                     @Override
-                    public void onResult(CompareResult result) {
+                    public void onSuccess(CompareResult result) {
                         Log.d(TAG, "onResult:    personId:"
                                 + result.personId
                                 + ",score:" + result.score);
@@ -102,7 +102,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void search(View view) {
         //replace your image file path here
-        MNFCService.getInstance().searchPersonByImg("13", new File("/sdcard/xxx.jpg"), 10, 0.4f, new OnSearchResultCallback() {
+        MNFCService.getInstance().searchPersonByImg("1022", new File("/sdcard/me.jpg"), 10, 0.4f, new OnSearchResultCallback() {
             @Override
             public void onSuccess(SearchResult results) {
                 Log.d(TAG, "onSuccess: 共返回:"
@@ -117,7 +117,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void searchUrl(View view) {
-        MNFCService.getInstance().searchPersonByUrl("13", "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1559312662571&di=b633e2aee7989fc607791af5fcc204c6&imgtype=0&src=http%3A%2F%2Fb-ssl.duitang.com%2Fuploads%2Fitem%2F201503%2F22%2F20150322094814_UEmhZ.jpeg",
+        MNFCService.getInstance().searchPersonByUrl("1022", "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1559312662571&di=b633e2aee7989fc607791af5fcc204c6&imgtype=0&src=http%3A%2F%2Fb-ssl.duitang.com%2Fuploads%2Fitem%2F201503%2F22%2F20150322094814_UEmhZ.jpeg",
                 10, 0.4f, new OnSearchResultCallback() {
                     @Override
                     public void onSuccess(SearchResult results) {
