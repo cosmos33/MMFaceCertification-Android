@@ -37,7 +37,7 @@ android {
 }
 
 dependencies {
-    api 'com.cosmos.mediax:mncertification:0.1.20190612.1251_release'
+    api 'com.cosmos.mediax:mncertification:0.1.20190701.1749_release'
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation 'com.android.support:appcompat-v7:28.0.0'
     implementation 'com.android.support.constraint:constraint-layout:1.1.3'

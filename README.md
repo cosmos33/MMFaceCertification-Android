@@ -76,3 +76,10 @@ MNFCService.getInstance().startInteractiveCertification(this, REQUEST_CODE);
 
 参考[接口文档](https://cosmos.wemomo.com/cv/wiki/kai-fa-zhi-nan/zhen-ren-ren-zheng/android-sdkjie-ru-zhi-nan.html)
 
+## 版本更新
+**0.1.20190701.1749_release**
+> 1. compare 人脸匹配接口返回结果中增加颜值分数
+> 2. compare跟search 人脸匹配跟搜索接口返回结果中增加人脸质量code，对照常量在 com.immomo.mncertification.constance.MNFCQulityCode 中
+> 3. 更新cv版本
+> 4. 优化了点头摇头识别算法
+> 5. 提供Config配置开启人脸扫描时的一些参数，以支持自定义扫脸页面title。详见demo

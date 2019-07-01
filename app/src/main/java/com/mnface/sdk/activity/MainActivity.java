@@ -44,7 +44,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void cooCertification(View view) {
-        MNFCService.getInstance().startInteractiveCertification(this, REQUEST_CODE, 5);
+        MNFCService.Config config = MNFCService.Config.obtain();
+        config.actionCount = 5;
+        config.title = "人脸扫描";
+        MNFCService.getInstance().startInteractiveCertification(this, REQUEST_CODE, config);
     }
 
     public void normalCertification(View view) {
